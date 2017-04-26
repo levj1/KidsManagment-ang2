@@ -3,7 +3,7 @@ import{ Component } from '@angular/core';
 
 @Component({
     selector: 'kpm-app',
-    template: '<div><el-app></el-app></div>'
+    template: '<div><login></login></div>'
 })
 export class AppComponent{
     pageTitle: string = "Kids Management App"

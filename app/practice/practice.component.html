@@ -1,0 +1,24 @@
+
+
+<div class="container">
+
+    <hr/>
+    <b>Form</b>
+    <form #testForm='ngForm' (ngSubmit)='submitForm(testForm)'>
+        <label>Name: </label><input type="text" name="name" id="name" ngModel />
+        <button type="submit">Submit</button>
+    </form>
+    Form value: {{formValue}}
+    <hr/>
+    <label>Name: </label><input type="name" [(ngModel)]='name' />
+    <hr/>
+
+    <p>Current number: {{aNumber}}</p>
+    <div>
+        <button class="btn" (click)='Increment()'>Add 1</button>
+    </div>
+
+    <div>
+        <button class="btn" (click)='Decrement()'>Substract 1</button>
+    </div>
+</div>

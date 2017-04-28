@@ -12,9 +12,9 @@ export class LoginComponent{
     readonly db_username: string = "test";
     readonly db_pass: string = "pass";
 
-    CanLogin(): void{
+    CanLogin(form: NgForm): void{
         //console.log((user == this.username && pass == this.password));
-        console.log();
+        console.log(JSON.stringify(form["username"]));
     }
     
 }

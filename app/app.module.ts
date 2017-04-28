@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { AppComponent }  from './app.component';
 import { EnfantListComponent } from './enfants/enfant-list.component';
 import { LoginComponent } from './login/login.component';
+import { PracticeComponent } from './practice/practice.component';
 
 @NgModule({
   imports: [ 
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
   [ 
     AppComponent, 
     EnfantListComponent,
-    LoginComponent
+    LoginComponent,
+    PracticeComponent
   ],
   bootstrap: [ AppComponent ]
 })

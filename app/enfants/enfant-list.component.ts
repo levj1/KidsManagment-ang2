@@ -8,7 +8,6 @@ export class EnfantListComponent{
     pageTitle: string = "Kids Care Management";
     showImage: boolean = false;
     listFilter: string = 'cart';
-    arrEnf: Enfant[] = [new Enfant('ame',5,'classA')];
 
     toggleImage(): void{
         this.showImage = !this.showImage;
@@ -16,7 +15,7 @@ export class EnfantListComponent{
 
 
 
-    enfants: any[] =
+    enfants: IEnfant[] =
     [
         {
 		"enfantId"   : 1,
@@ -57,16 +56,9 @@ enum ClassRoomName{
     PracticeLove
 }
 
-export class Enfant{
+interface IEnfant{
     enfantId: number;
     enfantName: string;
     enfantAge: number;
     pictureUrl: string;
-    enfantClassRoom: string;
-    
-    constructor(name: string, age: number, room: string){
-        this.enfantName = name;
-        this.enfantAge = age;
-        this.enfantClassRoom = room;
-    }
 }
